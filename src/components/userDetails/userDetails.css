@@ -1,0 +1,9 @@
+.user-desc-container__card{
+    width: 600px;
+    margin: 40px;
+}
+
+.user-desc-container{
+    display: flex;
+    justify-content: center;
+}

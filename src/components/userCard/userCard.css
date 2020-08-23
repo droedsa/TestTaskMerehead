@@ -1,0 +1,14 @@
+.user-card {
+    margin-bottom: 10px;
+    width: 700px;
+}
+
+.user-card__full-name {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.user-card__full-name h5 {
+    padding-left: 10px;
+}
