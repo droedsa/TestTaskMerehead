@@ -3,9 +3,9 @@ import Container from "@material-ui/core/Container";
 import Header from "../header/header";
 import {BrowserRouter, Route, useRouteMatch, Switch} from "react-router-dom";
 import UserList from "../userList/userList";
-import UserDescContainer from "../userDetails/userDetailsContainer";
 import store from '../../store'
 import {fetchUsers} from "../../actions/users";
+import UserDetailsContainer from "../userDetails/userDetailsContainer";
 
 const App = () => {
     useEffect(() => {
@@ -35,10 +35,10 @@ function Details() {
     let { path } = useRouteMatch();
     return (<Switch>
         <Route exact path={path}>
-            <UserDescContainer/>
+            <UserDetailsContainer/>
         </Route>
         <Route path={`${path}/:id`}>
-            <UserDescContainer/>
+            <UserDetailsContainer/>
         </Route>
     </Switch>)
 }
